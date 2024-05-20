@@ -12,6 +12,8 @@ function Home() {
     <div>
       <h2> Welcome to the HomePage </h2>
       <p> Description of Homepage </p>
+
+      <h1> Components of Homepage </h1>
       <button onClick={goToAbout}>Go to About</button>
     </div>
   );
