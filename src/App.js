@@ -10,7 +10,8 @@ function Home() {
 
   return (
     <div>
-      <h2>Home</h2>
+      <h2> Welcome to the HomePage </h2>
+      <p> Description of Homepage </p>
       <button onClick={goToAbout}>Go to About</button>
     </div>
   );
@@ -21,8 +22,7 @@ const Header = () => {
     <nav>
     <Link to="/">Home</Link>
     <Link to="about">About</Link>
-    <Link to="dashboard">Dashboard</Link>
-    <Link to="settings">Settings</Link>
+    <Link to="contacts">Contacts</Link>
   </nav>
   )
 }
@@ -30,12 +30,8 @@ function About() {
   return <h2>About</h2>;
 }
 
-function Dashboard() {
-  return <h3>Dashboard</h3>;
-}
-
-function Settings() {
-  return <h3>Settings</h3>;
+function Contacts() {
+  return <h3>Contacts Page</h3>;
 }
 
 function Error() {
@@ -59,9 +55,7 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
-          <Route path="dashboard" element={<Dashboard />}>
-            <Route path="settings" element={<Settings />} />
-          </Route>
+          <Route path="contacts" element={<Contacts />} />
           <Route path='*' element={<Error/>} />
         </Route>
       </Routes>
