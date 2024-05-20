@@ -5,7 +5,6 @@ const Counter = () => {
 
     const increamentFunc = () =>{
         setCount(count+1);
-        // count += 1;
         console.log(count);
     }
   return (
