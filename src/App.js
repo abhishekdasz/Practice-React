@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route, Link, Outlet, useNavigate } from 'react-router-dom';
+import Counter from './Components/Counter';
 
 function Home() {
   const navigate = useNavigate();
@@ -14,6 +15,7 @@ function Home() {
       <p> Description of Homepage </p>
 
       <h1> Components of Homepage </h1>
+      <Counter/>
       <button onClick={goToAbout}>Go to About</button>
     </div>
   );
