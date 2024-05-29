@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route, Link, Outlet, useNavigate } from 'react-router-dom';
 import Counter from './Components/Counter';
+import Parent from './Parent';
 
 function Home() {
   const navigate = useNavigate();
@@ -17,6 +18,8 @@ function Home() {
       <h1> Components of Homepage </h1>
       <Counter/>
       <button onClick={goToAbout}>Go to About</button>
+
+      <Parent/>
     </div>
   );
 }
