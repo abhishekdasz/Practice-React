@@ -6,6 +6,7 @@ const Child = () => {
   return (
     <div>
       <p> {contextValue} </p>
+      <p> Child </p>
     </div>
   )
 }

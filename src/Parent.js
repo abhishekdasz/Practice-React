@@ -11,7 +11,7 @@ const Parent = () => {
             <Child/>
         </div>
     </MyContext.Provider>
-  )
+  )  
 }
 
 export default Parent

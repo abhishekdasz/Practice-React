@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter, Routes, Route, Link, Outlet, useNavigate } from 'react-router-dom';
 import Counter from './Components/Counter';
 import Parent from './Parent';
+import Child from './Child';
 
 function Home() {
   const navigate = useNavigate();
@@ -34,7 +35,13 @@ const Header = () => {
   )
 }
 function About() {
-  return <h2>About</h2>;
+  return (
+    <>
+      <h2>About</h2>
+      <Child/>
+    </>
+  )
+  ;
 }
 
 function Contacts() {
